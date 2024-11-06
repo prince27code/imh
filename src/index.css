@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .gradient-primary {
+    @apply bg-gradient-to-br from-[#1A1A1A] via-[#2C1F3A] to-[#331B4D];
+  }
+  .gradient-secondary {
+    @apply bg-gradient-to-tr from-[#0F0F0F] via-[#1A1A1A] to-[#0F0F0F];
+  }
+  .gradient-accent {
+    @apply bg-gradient-to-r from-[#9F2B68] via-[#B83280] to-[#D53F8C];
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500;
+  }
+}
